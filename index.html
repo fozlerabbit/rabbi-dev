@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fozle Rabbi | Official Website</title>
+  <link id="canonical" rel="canonical" href="https://rabbifozle.com/">
+  <script>
+    // Run immediately, before styles or body. Never wait for a timer or load event.
+    // Concatenation preserves encoded paths, trailing slashes, queries and hashes.
+    document.getElementById("canonical").href =
+      "https://rabbifozle.com" + window.location.pathname;
+    try {
+      window.location.replace("https://rabbifozle.com" + window.location.pathname + window.location.search + window.location.hash);
+    } catch (error) {
+      // A browser may block navigation; the real anchor below remains usable.
+    }
+  </script>
+  <!-- No-JS fallback: zero delay. Keep it in noscript so a root-only refresh
+       cannot race the path-preserving JavaScript navigation. Static HTML cannot
+       compute an arbitrary incoming path/query/hash; this fallback goes home. -->
+  <noscript><meta http-equiv="refresh" content="0; url=https://rabbifozle.com/"></noscript>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fozle Rabbi, full-stack developer, AI automation engineer and founder of ScriptySphere. Visit his new official home at rabbifozle.com.">
+  <meta name="theme-color" content="#F8FCFF">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fozle Rabbi | Official Website">
+  <meta property="og:description" content="Building with technology. Creating impact. Find Fozle Rabbi at his new official home, rabbifozle.com.">
+  <meta property="og:url" content="https://rabbifozle.com/">
+  <meta property="og:site_name" content="Fozle Rabbi">
+  <!-- System fonts, a data favicon and CSS decoration avoid asset requests. -->
+  <link rel="icon" href="data:,">
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; }
+    #fr-page, #fr-page * { box-sizing: border-box; }
+    #fr-page {
+      --sky: #38BDF8; --deep: #0284C7; --ink: #0F172A; --muted: #64748B;
+      min-height: 100vh; min-height: 100svh;
+      display: grid; align-content: center; justify-items: center;
+      padding: 48px 20px; color: var(--ink);
+      font: 400 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(ellipse at 50% 15%, #DFF4FF 0, transparent 58%), #F8FCFF;
+    }
+    #fr-page .fr-card {
+      position: relative; width: 100%; max-width: 560px; padding: 40px;
+      background: #FFFFFF; border: 1px solid #DFEDF5; border-radius: 24px;
+      box-shadow: 0 20px 70px -35px #0284C740; overflow: hidden;
+    }
+    #fr-page .fr-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, #BAE6FD, var(--sky), #BAE6FD);
+    }
+    #fr-page .fr-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 32px; }
+    #fr-page .fr-monogram {
+      display: grid; place-items: center; width: 46px; height: 46px;
+      border-radius: 13px; background: #EFF9FF; color: #0369A1;
+      font-size: 18px; font-weight: 750; letter-spacing: -1px;
+    }
+    #fr-page .fr-eyebrow { color: #0369A1; font-size: 11px; font-weight: 650; letter-spacing: 1.8px; text-transform: uppercase; }
+    #fr-page h1 { margin: 0 0 8px; font-size: clamp(34px, 7vw, 44px); line-height: 1.12; font-weight: 750; letter-spacing: -1.8px; }
+    #fr-page .fr-tagline { margin: 0 0 16px; font-size: 17px; color: #334155; }
+    #fr-page .fr-identity { margin: 0; max-width: 380px; font-size: 13px; line-height: 1.8; color: var(--muted); }
+    #fr-page .fr-divider { height: 1px; background: #E8F0F5; margin: 28px 0; }
+    #fr-page .fr-message { margin: 0 0 20px; font-size: 16px; color: #334155; }
+    #fr-page .fr-destination { padding: 18px 20px; border: 1px solid #DCEFFA; background: #F5FBFF; border-radius: 12px; }
+    #fr-page .fr-label { display: block; color: var(--muted); font-size: 10px; font-weight: 650; letter-spacing: 1.7px; text-transform: uppercase; margin-bottom: 4px; }
+    #fr-page .fr-domain { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: clamp(21px, 5vw, 28px); font-weight: 650; line-height: 1.3; letter-spacing: -.8px; overflow-wrap: anywhere; }
+    #fr-page .fr-arrow { color: var(--deep); font-size: 27px; font-weight: 400; }
+    #fr-page .fr-status { margin: 18px 0 22px; color: var(--muted); font-size: 12px; display: flex; align-items: baseline; gap: 8px; }
+    #fr-page .fr-dot { flex: 0 0 6px; width: 6px; height: 6px; align-self: center; border-radius: 50%; background: var(--deep); }
+    #fr-page .fr-link {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      min-height: 48px; padding: 12px 16px; border-radius: 10px;
+      background: #0369A1; color: #FFFFFF; text-decoration: none;
+      font-size: 14px; font-weight: 600;
+    }
+    #fr-page .fr-link:hover { background: #075985; }
+    #fr-page .fr-link:focus-visible { outline: 3px solid var(--sky); outline-offset: 4px; }
+    #fr-page .fr-footer { margin-top: 25px; text-align: center; color: var(--muted); font-size: 11px; letter-spacing: 1px; }
+    /* No animation or transitions: reduced-motion preferences are respected by default. */
+    @media (max-width: 480px) {
+      #fr-page { padding: 28px 16px; }
+      #fr-page .fr-card { padding: 28px 24px; border-radius: 20px; }
+      #fr-page .fr-top { margin-bottom: 28px; }
+      #fr-page .fr-tagline { font-size: 15px; }
+      #fr-page .fr-message { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="fr-page">
+    <main class="fr-card" aria-labelledby="fr-name">
+      <div class="fr-top">
+        <span class="fr-monogram" aria-hidden="true">fr.</span>
+        <span class="fr-eyebrow">A new chapter</span>
+      </div>
+      <h1 id="fr-name">Fozle Rabbi</h1>
+      <p class="fr-tagline">Building with technology. Creating impact.</p>
+      <p class="fr-identity">Full-Stack Developer <span aria-hidden="true">&middot;</span> AI Automation Engineer<br>Founder of ScriptySphere</p>
+      <div class="fr-divider" aria-hidden="true"></div>
+      <p class="fr-message">I'm moving to my new official home on the web.</p>
+      <div class="fr-destination">
+        <span class="fr-label">My official website</span>
+        <span class="fr-domain">rabbifozle.com <span class="fr-arrow" aria-hidden="true">↗</span></span>
+      </div>
+      <p class="fr-status" role="status"><span class="fr-dot" aria-hidden="true"></span>Redirecting you to my new website...</p>
+      <a id="fr-visit" class="fr-link" href="https://rabbifozle.com/">Visit rabbifozle.com <span aria-hidden="true">→</span></a>
+    </main>
+    <footer class="fr-footer">Technology &bull; Innovation &bull; Social Impact</footer>
+  </div>
+  <script>
+    // Keep the manual fallback path-aware if navigation was blocked or cancelled.
+    document.getElementById("fr-visit").href =
+      "https://rabbifozle.com" + window.location.pathname + window.location.search + window.location.hash;
+  </script>
+  <!--
+    DEPLOYMENT (one HTML file, no build step)
+    Upload index.html to the old domain's document root. Do not deploy it to the
+    destination domain, which must serve your actual website, or it will loop.
+    The file redirects immediately even when opened locally. Use the supplied
+    in-conversation preview to inspect its interface without navigation.
+
+    For nested URLs, the host must serve this file at the requested URL without
+    rewriting the browser address, or redirect those URLs at the server/edge.
+    On GitHub Pages, enable Pages for the branch/root containing this file and
+    configure fozlerabbi.dev as the custom domain, including DNS and HTTPS.
+    GitHub Pages cannot route every missing path to index.html using this file
+    alone. Its normal workaround is an identical 404.html, a second deployed
+    filename. To keep a strictly single-file deployment, use an edge redirect
+    rule or a host with a configurable catch-all instead.
+
+    PERMANENT HTTP REDIRECT (preferred for speed and SEO)
+    JavaScript and meta refresh do NOT create an HTTP 301 response. For Nginx,
+    add the following directive inside the EXISTING old-domain server blocks
+    for HTTP and HTTPS (keep the valid TLS certificate and listen settings):
+
+      server_name fozlerabbi.dev;
+      return 301 https://rabbifozle.com$request_uri;
+
+    This is configuration guidance, not code that HTML can execute. Apply it in
+    the server configuration, validate with nginx -t, then reload Nginx. The
+    request_uri contains the original path and query, including trailing slashes.
+    Fragments never reach the server; browsers normally inherit the incoming
+    fragment when a redirect Location has no fragment. JS explicitly appends it.
+    A server redirect bypasses this page entirely and needs no catch-all file.
+
+    The static canonical defaults to the new homepage; JavaScript changes it
+    to the matching path, intentionally excluding query parameters and hashes.
+    No-JS meta refresh and the static anchor point to the homepage, because a
+    single static file cannot substitute arbitrary incoming URL components.
+  -->
+</body>
+</html>
